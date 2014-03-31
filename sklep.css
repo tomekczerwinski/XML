@@ -5,7 +5,9 @@ sklep{
 		border: 2px;
 
 		 }
-		 
+		
+
+ 
 sklep>gry{
 	display:block;
 	width: 600px;
@@ -45,7 +47,7 @@ sklep>pracownicy>tytul{
 	
 sklep>pracownicy>pracownik{
 	background:gray;
-	border: 1px; 
+	border: 3px solid brown; 
 	margin: 1px;
 	display: block;
 	width: 400px;
@@ -96,7 +98,7 @@ pracownik>stanowisko>lata_pracy {
 	
 sklep>klienci>klient{
 	background:gray;
-	border: 1px; 
+	border: 3px solid green;
 	margin: 1px;
 	display: block;
 	width: 400px;
@@ -160,8 +162,9 @@ rodzaj {
 
 
 sklep>gry>gra { 
+
+	border: 3px solid orange;
 	background:gray;
-	border: 1px; 
 	display: block;
 	width: 400px;
 	height: 250px;
