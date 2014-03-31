@@ -1,0 +1,216 @@
+sklep{	
+		background: #3943C6;
+		display: block;
+		margin: 100px;
+		border: 2px;
+
+		 }
+		 
+sklep>gry{
+	display:block;
+	width: 600px;
+	height: 600px;
+	float:right;
+		}
+		
+	
+
+sklep>gry>tytul{
+	color:white;
+	font-size:48px;
+	text-align:left;
+	display: block;
+	padding: 10px;
+	}
+	
+	
+	
+sklep>klienci>tytul{
+
+	color:white;
+
+	font-size:48px;
+
+	display:block;
+	margin:10px;
+	}
+	
+sklep>pracownicy>tytul{
+	color:white;
+	font-size:48px;
+
+	display:block;
+	margin:10px;
+	}
+	
+sklep>pracownicy>pracownik{
+	background:gray;
+	border: 1px; 
+	margin: 1px;
+	display: block;
+	width: 400px;
+	height: 140px;
+}
+
+
+pracownik>imie { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+pracownik>nazwisko { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+pracownik>stanowisko { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+pracownik>stanowisko>nazwa { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+
+
+pracownik>stanowisko>lata_pracy { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+	
+sklep>klienci>klient{
+	background:gray;
+	border: 1px; 
+	margin: 1px;
+	display: block;
+	width: 400px;
+	height: 80px;
+
+
+}
+
+klient>imie { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+klient>nazwisko { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+klient>adres { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+gra>nazwa { 
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px;
+}
+
+data_produkcji { 
+	font-size:18px;
+	border: 1px; 
+	display:block;
+	padding: 2px;
+	margin: 2px;}
+
+cena { 
+	font-size:20px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px; }
+
+rodzaj {
+	font-size:18px;
+	border: 1px;
+	display:block;
+	padding: 2px;
+	margin: 2px; }
+
+
+
+sklep>gry>gra { 
+	background:gray;
+	border: 1px; 
+	display: block;
+	width: 400px;
+	height: 250px;
+}
+
+platforma {
+	font-size:18px;
+	border: 1px; 
+	display: block;}
+	platforma nazwa {border: 1px;}
+	
+sklep>gry>gra[rodzaj="RPG"]:hover{
+	background: green;
+}
+
+sklep>gry>gra[rodzaj="przygoda"]:hover{
+	background: purple;
+}
+
+imie:before{
+	content: "Imie: ";
+}
+nazwisko:before{
+	content: "Nazwisko: ";
+}
+opis:before{
+	content: "Opis: ";
+}
+lata_pracy:before{
+	content: "Czas Zatrudnienia: ";
+}
+adres:before{
+	content: "Adres: ";
+}
+data_produkcji:before{
+	content: "Data Produkcji: ";
+}
+platforma:before{
+	content: "Platforma: ";
+}
+cena:before{
+	content: "Cena: ";
+}
+nazwa:before{
+	content: "Nazwa: ";
+}
+rodzaj:before{
+	content: "Rodzaj: ";
+}
+wydawnictwo:before{
+	content: "Wydawnictwo: ";
+}
