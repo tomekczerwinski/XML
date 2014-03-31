@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sklep SYSTEM "sklep.dtd">
+<?xml-stylesheet type="text/css" href="sklep.css" ?>
+
+
+	
+<sklep>
+
+	<gry>
+		<tytul>GRY</tytul>
+		<gra rodzaj="RPG">
+			
+			<nazwa>
+				Final Fantasy
+			</nazwa>
+
+			<data_produkcji>
+				2011
+			</data_produkcji>
+
+			<cena>
+				99
+			</cena>
+
+			<platforma>
+				Playstation 3
+			</platforma>
+
+			<platforma>
+				XBOX360
+			</platforma>
+
+			<rodzaj rodzaj="RPG">
+					RPG
+			</rodzaj>
+			<wydawca>
+				<nazwa>
+					Square-Enix
+				</nazwa>
+
+				<rok_powstania>
+					1990
+				</rok_powstania>
+
+			</wydawca>
+
+		</gra>
+		<gra rodzaj="przygoda">
+			<nazwa>
+				Metal Gear Solid
+			</nazwa>
+
+			<data_produkcji>
+				1998
+			</data_produkcji>
+
+			<cena>
+				53
+			</cena>
+			<platforma>
+				Playstation
+			</platforma>
+
+			<platforma>
+				PC
+			</platforma>
+
+			<rodzaj rodzaj="przygoda">
+					Przygodowa
+			</rodzaj>
+
+			<wydawca>
+				<nazwa>
+					Konami
+				</nazwa>
+
+				<rok_powstania>
+					1990
+				</rok_powstania>
+				
+			</wydawca>
+
+		</gra>
+	</gry>
+	<klienci>
+		<tytul>KLIENCI</tytul>
+		<klient>
+			<imie>
+				Tomasz
+			</imie>
+			<nazwisko>
+				Czerwinski
+			</nazwisko>
+			<adres>
+				<ulica>
+					Kotarbińskiego
+				</ulica>
+				<nr_domu>
+					2B
+				</nr_domu>
+				<miasto>
+					Malbork
+				</miasto>
+				<kod>
+					82-200
+				</kod>
+			</adres>
+		</klient>
+
+		<klient>
+			<imie>
+				Zenek
+			</imie>
+			<nazwisko>
+				Kofiel
+			</nazwisko>
+			<adres>
+				<ulica>
+					Inna
+				</ulica>
+				<nr_domu>
+					223
+				</nr_domu>
+				<miasto>
+					Zenonowo
+				</miasto>
+				<kod>
+					82-450
+				</kod>
+			</adres>
+		</klient>
+	</klienci>
+
+
+	<pracownicy>
+		<tytul>PRACOWNICY</tytul>
+		<pracownik>
+			<imie>
+				Marcin
+			</imie>
+
+			<nazwisko>
+				Winowiecki
+			</nazwisko>
+
+			<stanowisko>
+				<nazwa>
+					Konsultant
+				</nazwa>
+
+				<lata_pracy>
+					7 lat
+				</lata_pracy>
+			</stanowisko>
+
+
+
+		</pracownik>
+
+		<pracownik>
+			<imie>
+				Tomasz
+			</imie>
+
+			<nazwisko>
+				Czerwiński
+			</nazwisko>
+
+			<stanowisko>
+				<nazwa>
+					Szef
+				</nazwa>
+
+				<lata_pracy>
+					20 lat
+				</lata_pracy>
+			</stanowisko>
+
+
+
+		</pracownik>
+
+
+	</pracownicy>
+
+
+
+	</sklep>
