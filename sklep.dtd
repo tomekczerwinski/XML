@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT sklep (gry, klienci, pracownicy)>
+<!ELEMENT gry (tytul,gra*)>
+<!ELEMENT klienci (tytul,klient*)>
+<!ELEMENT pracownicy (tytul,pracownik*)>
+
+<!ELEMENT tytul (#PCDATA)>
+
+
+
+
+
+<!ELEMENT gra (nazwa, data_produkcji, cena, platforma*, rodzaj, wydawca)>
+
+<!ATTLIST gra
+	rodzaj IDREF #REQUIRED>
+
+<!ELEMENT nazwa (#PCDATA)>
+
+
+<!ELEMENT data_produkcji (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ELEMENT platforma (#PCDATA)>
+
+
+<!ELEMENT rodzaj (#PCDATA)>
+<!ELEMENT wydawca (nazwa, rok_powstania)>
+
+<!ATTLIST rodzaj
+	rodzaj ID #REQUIRED>
+
+
+
+<!ELEMENT rok_powstania (#PCDATA)>
+<!ELEMENT opis (#PCDATA) >
+<!ATTLIST wydawca
+	opis CDATA #IMPLIED>
+
+
+<!ELEMENT klient (imie, nazwisko, adres)>
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+
+<!ELEMENT adres (ulica, nr_domu, miasto, kod)>
+
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_domu (#PCDATA)>
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT kod (#PCDATA)>
+
+
+<!ELEMENT pracownik (imie, nazwisko, stanowisko)>
+
+<!ELEMENT stanowisko (nazwa, lata_pracy)>
+<!ATTLIST stanowisko
+	opis CDATA #IMPLIED>
+
+<!ELEMENT lata_pracy (#PCDATA)>
