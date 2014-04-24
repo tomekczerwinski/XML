@@ -94,9 +94,7 @@
 				<miasto>
 					Malbork
 				</miasto>
-				<kod>
-					82-200
-				</kod>
+				<kod>82-200</kod>
 			</adres_wysylkowy>
 			</adres>
 		</klient>
@@ -119,9 +117,7 @@
 				<miasto>
 					Zenonowo
 				</miasto>
-				<kod>
-					82-450
-				</kod>
+				<kod>82-450</kod>
 			</adres_zameldowania>
 			</adres>
 		</klient>
