@@ -14,9 +14,7 @@
 				Final Fantasy
 			</nazwa>
 
-			<data_produkcji>
-				2011
-			</data_produkcji>
+			<data_produkcji>2011-02-12</data_produkcji>
 
 			<cena>
 				99
@@ -38,9 +36,7 @@
 					Square-Enix
 				</nazwa>
 
-				<rok_powstania>
-					1990
-				</rok_powstania>
+				<rok_powstania>1990-12-01</rok_powstania>
 
 			</wydawca>
 
@@ -50,9 +46,7 @@
 				Metal Gear Solid
 			</nazwa>
 
-			<data_produkcji>
-				1998
-			</data_produkcji>
+			<data_produkcji>1992-09-08</data_produkcji>
 
 			<cena>
 				53
@@ -74,9 +68,7 @@
 					Konami
 				</nazwa>
 
-				<rok_powstania>
-					1990
-				</rok_powstania>
+				<rok_powstania>1990-09-11</rok_powstania>
 				
 			</wydawca>
 
@@ -92,6 +84,7 @@
 				Czerwinski
 			</nazwisko>
 			<adres>
+			<adres_wysylkowy>
 				<ulica>
 					Kotarbińskiego
 				</ulica>
@@ -104,6 +97,7 @@
 				<kod>
 					82-200
 				</kod>
+			</adres_wysylkowy>
 			</adres>
 		</klient>
 
@@ -115,6 +109,7 @@
 				Kofiel
 			</nazwisko>
 			<adres>
+			<adres_zameldowania>
 				<ulica>
 					Inna
 				</ulica>
@@ -127,6 +122,7 @@
 				<kod>
 					82-450
 				</kod>
+			</adres_zameldowania>
 			</adres>
 		</klient>
 	</klienci>
@@ -143,9 +139,7 @@
 				Winowiecki
 			</nazwisko>
 
-			<plec>
-				m
-			</plec>
+			<plec>m</plec>
 			
 			<stanowisko>
 				<nazwa>
@@ -170,9 +164,7 @@
 				Czerwiński
 			</nazwisko>
 
-			<plec>
-				m
-			</plec>
+			<plec>m</plec>
 			
 			<stanowisko>
 				<nazwa>
