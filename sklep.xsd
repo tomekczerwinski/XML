@@ -135,7 +135,7 @@
 	</xsd:simpleType>
 
 
-	<xsd:simpleType name="kodPocz">
+	<xsd:simpleType name="KodPocz">
 		<xsd:restriction base="xsd:string">
 			<xsd:pattern value="[0-9]{2}-[0-9]{3}"/>
 		</xsd:restriction>
