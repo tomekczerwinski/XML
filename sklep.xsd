@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+	<xsd:element name="sklep">
+
+		<xsd:complexType>
+
+			<xsd:sequence>
+
+				<xsd:element name="gry" type="MojeGry" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element name="klienci" type="MoiKlienci" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element name="pracownicy" type="MoiPracownicy" minOccurs="1" maxOccurs="unbounded"/>
+				
+			</xsd:sequence>
+
+		</xsd:complexType>
+
+	</xsd:element>
+
+
+	<xsd:complexType name="MojeGry">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string"/>
+			<xsd:element name="gra" type="MojaGra" minOccurs="1" maxOccurs="unbounded"/>
+			
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MojaGra">
+		<xsd:all>
+			<xsd:element name="nazwa" type="xsd:string"/>
+			<xsd:element name="data_produkcji" type="xsd:date"/>
+			<xsd:element name="cena" type="xsd:decimal"/>
+			<xsd:element name="platforma" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="rodzaj" type="MojRodzaj" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="wydawca" type="MojWydawca" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:all>
+
+		<xsd:attribute name="rodzaj" type="xsd:IDREF" use="required"/>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MojRodzaj">
+		<xsd:sequence>
+			<xsd:element name="rodzaj" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="rodzaj" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="MojWydawca">
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string"/>
+			<xsd:element name="rok_powstania" type="xsd:date"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MoiKlienci">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string"/>
+			<xsd:element name="klient" type="MojKlient" minOccurs="1" maxOccurs="unbounded"/>
+
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="MojKlient">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string"/>
+			<xsd:element name="nazwisko" type="xsd:string"/>
+			<xsd:element name="adres" type="MojAdres" minOccurs="1" maxOccurs="unbounded"/>
+
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MojAdres">
+		<xsd:choice>
+			<xsd:element name="adres_wysylkowy" type="Adres"/>
+			<xsd:element name="adres_zameldowania" type="Adres"/>
+		</xsd:choice>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="Adres">
+		<xsd:all>
+			<xsd:element name="ulica" type="xsd:string"/>
+			<xsd:element name="nr_domu" type="xsd:string"/>
+			<xsd:element name="miasto" type="xsd:string"/>
+			<xsd:element name="kod" type="KodPocz"/>
+		</xsd:all>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MoiPracownicy">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string"/>
+			<xsd:element name="pracownik" type="MojPracownik" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="MojPracownik">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string"/>
+			<xsd:element name="nazwisko" type="xsd:string"/>
+			<xsd:element name="plec" type="mojaPlec"/>
+			<xsd:element name="stanowisko" type="MojeStanowisko"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="MojeStanowisko">
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string"/>
+			<xsd:element name="lata_pracy" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="mojaPlec">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="k"/>
+			<xsd:enumeration value="m"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="kodPocz">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{2}-\d{3}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+</xsd:schema>
