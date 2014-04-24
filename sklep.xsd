@@ -29,26 +29,36 @@
 
 
 	<xsd:complexType name="MojaGra">
-		<xsd:all>
+		<xsd:sequence>
 			<xsd:element name="nazwa" type="xsd:string"/>
 			<xsd:element name="data_produkcji" type="xsd:date"/>
 			<xsd:element name="cena" type="xsd:decimal"/>
 			<xsd:element name="platforma" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
 			<xsd:element name="rodzaj" type="MojRodzaj" minOccurs="1" maxOccurs="unbounded"/>
 			<xsd:element name="wydawca" type="MojWydawca" minOccurs="1" maxOccurs="unbounded"/>
-		</xsd:all>
+		</xsd:sequence>
 
 		<xsd:attribute name="rodzaj" type="xsd:IDREF" use="required"/>
 	</xsd:complexType>
 
 
+
+		
+		
 	<xsd:complexType name="MojRodzaj">
-		<xsd:sequence>
-			<xsd:element name="rodzaj" type="xsd:string"/>
-		</xsd:sequence>
-		<xsd:attribute name="rodzaj" type="xsd:ID" use="required"/>
+		<xsd:simpleContent>
+			<xsd:extension base="NazwaRodzaju">
+				<xsd:attribute name="rodzaj" type="xsd:ID" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
 	</xsd:complexType>
 
+	<xsd:simpleType name="NazwaRodzaju">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		
 	<xsd:complexType name="MojWydawca">
 		<xsd:sequence>
 			<xsd:element name="nazwa" type="xsd:string"/>
