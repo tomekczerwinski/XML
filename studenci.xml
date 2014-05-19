@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="Style" ?>
+<uczelnia>
+<studenci>
+
+	<student grupa="INF" plec="M">
+		<imie>Tomasz</imie>
+		<nazwisko>Czerwiński</nazwisko>
+		<wiek>22</wiek>
+		<strona_internetowa>~tczerwinski</strona_internetowa>
+		<mail>tczerwinski@inf.ug.edu.pl</mail>
+	</student>
+
+
+	<student grupa="MAT" plec="k">
+		<imie>Anna</imie>
+		<nazwisko>Joanna</nazwisko>
+		<wiek>22</wiek>
+		<strona_internetowa>annataka.ug.edu.pl</strona_internetowa>
+		<mail>annaj@dobrystudent.pl</mail>
+	</student>
+
+	<student grupa="MAT" plec="k">
+		<imie>Sara</imie>
+		<nazwisko>Junda</nazwisko>
+		<wiek>25</wiek>
+		<strona_internetowa>sara.to.moje.pl</strona_internetowa>
+		<mail>sara@dobrystudent.pl</mail>
+	</student>
+	
+	
+	
+	
+</studenci>
+
+
+<grupy>
+
+
+	<grupa grupa="INF">
+		<nazwa>2B</nazwa>
+		<opis>Przykładowy opis</opis>
+	</grupa>
+
+	<grupa grupa="MAT">
+		<nazwa>1A</nazwa>
+		<opis>Opis</opis>
+	</grupa>
+	
+	
+	
+	
+</grupy>
+
+</uczelnia>
