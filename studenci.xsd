@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="uczelnia">
+
+		<xsd:complexType>
+
+			<xsd:sequence>
+
+				<xsd:element name="studenci" type="MoiStudenci" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element name="grupy" type="MojeGrupy" minOccurs="1" maxOccurs="unbounded"/>
+
+			</xsd:sequence>
+
+		</xsd:complexType>
+
+	</xsd:element>
+
+
+	<xsd:complexType name="MoiStudenci">
+		<xsd:sequence>
+			<xsd:element name="student" type="MojStudent" minOccurs="1" maxOccurs="unbounded"/>
+
+		</xsd:sequence>
+		
+	</xsd:complexType>
+	
+	<xsd:complexType name="MojStudent">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string"/>
+			<xsd:element name="nazwisko" type="xsd:string"/>
+			<xsd:element name="wiek" type="xsd:int"/>
+			<xsd:element name="strona_internetowa" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="mail" type="MojEmail" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="grupa" type="xsd:IDREF" use="required"/>
+		<xsd:attribute name="plec" type="MojaPlec" use="required"/>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="MojeGrupy">
+		<xsd:sequence>
+			<xsd:element name="grupa" type="MojaGrupa" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+
+	</xsd:complexType>
+	
+	<xsd:complexType name="MojaGrupa">
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string"/>
+			<xsd:element name="opis" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="grupa" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+
+
+
+	<xsd:simpleType name="MojaPlec">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[mM]|[kK]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="MojEmail">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*"/>
+		</xsd:restriction>
+		
+	</xsd:simpleType>
+
+</xsd:schema>
